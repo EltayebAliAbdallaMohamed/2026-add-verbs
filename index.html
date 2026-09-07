@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>The Role of Verbs in Vocabulary Learning</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="toolbar" role="toolbar" aria-label="Presentation controls">
+    <button id="prevBtn" aria-label="Previous slide" title="← Previous">◀ Previous</button>
+    <button id="nextBtn" aria-label="Next slide" title="Next →">Next ▶</button>
+    <button id="firstBtn" title="First slide (Home)" aria-label="Go to first slide">⏮ First</button>
+    <button id="lastBtn" title="Last slide (End)" aria-label="Go to last slide">Last ⏭</button>
+    <button id="fullscreenBtn" title="Enter fullscreen (F)" aria-label="Toggle fullscreen">⛶ Fullscreen</button>
+    <button id="notesToggle" aria-pressed="false" title="Show presenter notes (Ctrl+N)" aria-label="Toggle presenter notes">📝 Notes</button>
+    <button id="contrastToggle" aria-pressed="false" title="High contrast mode" aria-label="Toggle high contrast">◐ Contrast</button>
+    <button id="bigTextToggle" aria-pressed="false" title="Larger text" aria-label="Toggle large text">A+ Text</button>
+    <button id="printBtn" title="Print presentation" aria-label="Print">🖨️ Print</button>
+    <div id="progress" aria-live="polite" class="progress">Slide 1 / 14</div>
+  </div>
+
+  <main id="presentation" class="presentation" role="application" aria-roledescription="presentation slide deck">
+    <div id="slides" class="slides" tabindex="0">
+      <!-- Slides will be dynamically generated here -->
+    </div>
+
+    <aside id="notesPanel" class="notes" aria-hidden="true">
+      <h3>Presenter Notes</h3>
+      <div id="notesContent">Toggle notes to show speaker notes here.</div>
+    </aside>
+  </main>
+
+  <nav id="thumbnails" class="thumbnails" aria-label="Slide thumbnails"></nav>
+
+  <div id="srAnnounce" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
